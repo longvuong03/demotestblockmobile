@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./images/icontabbar.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-lg-3 col-sm-12  text-center">
+          <span class="fs-6 text-secondary title">Welcome to Multikart</span>
+        </div>
+        <div class="col-lg-3 responsive_none ">
+          <span class="fs-6 text-secondary"><i class="fa-solid fa-phone">&emsp;</i>
+            Call Us : +84 886-670-711</span>
+        </div>
+        <div class="col-lg-3 offset-3 responsive_none d-flex">
+          <span class="text-secondary  csshoverheader responsive_none"> <i class="fa-solid fa-heart text-secondary"></i>
+            Wish List&emsp;&emsp;</span>
+          <div class="dropdown">
+            <span class="text-secondary  csshoverheader dropdownbtn responsive_none" id="dropdownbtn"
+              data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user"></i>
+              Account</span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownbtn">
+              <li><a class="dropdown-item" href="./indexdn.html">Sign In</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-3 mt-1"><a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a></div>
+            <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+            <div class="col-7">
+              <div class="navbar-nav fs-4">
+                <a class="nav-link active  responsive_none" aria-current="page" href="#">HOME</a>
+                <a class="nav-link  responsive_none" href="#">SHOP</a>
+                <a class="nav-link  responsive_none" href="#">FEATURED</a>
+                <a class="nav-link  responsive_none" href="#">PRODUCTS</a>
+                <a class="nav-link  responsive_none" href="#">PAGE</a>
+                <a class="nav-link  responsive_none" href="#">BLOGS</a>
+                <div class="icon-navbar">
+                  <a class="nav-link  responsive_none" href="#">
+                    <ion-icon name="search-outline">
+                    </ion-icon>
+                  </a>
+                  <a class="nav-link  responsive_none" href="#">
+                    <ion-icon name="cog-outline"></ion-icon>
+                  </a>
+                  <a class="nav-link  responsive_none position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <ion-icon name="cart-outline">
+                    </ion-icon>
+  <span class="position-absolute translate-middle bg-danger border border-light rounded-circle  icontb">
+    0
+    <span class="visually-hidden">unread messages</span>
+  </span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </nav>
+    </div>
+    <div class="offcanvas-header-none">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+          class="fa-solid fa-bars"></i></button>
+
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img src="./images/logo.png" alt=""></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#">Feature</a>
+              <a class="nav-link" href="#">Page</a>
+              <a class="nav-link" href="#">Blog</a>
+
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="./indexdn.html">Login</a></li>
+                <li><a class="dropdown-item" href="./indexdk.html">Log Up</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else
+                    here</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./images/banner1.jpg" class="d-block w-100 imgbanner" alt="...">
+            <div class="carousel-caption">
+              <p class="fs-3 fw-bold text-secondary">Welcome To Fashion</p>
+              <p class="fw-bolder titlecarousel">MEN FASHION</p>
+              <button class="btn btn-shopnow">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/banner2.jpg" class="d-block w-100 imgbanner" alt="...">
+            <div class="carousel-caption">
+              <p class="fs-3 fw-bold text-secondary">Welcome To Fashion</p>
+              <p class="fw-bolder titlecarousel">WOMEN FASHION</p>
+              <button class="btn btn-shopnow">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-4 mb-4">
+      <div class="col-lg-6 col-sm-12 shadow-sm position-relative  banner-sale">
+        <img src="./images/sale1.jpg" alt="" class=" img-fluid img-banner-sale">
+        <span class="color-primary fs-5 fw-bold caption-img-sale1">Sale 30%</span><br>
+        <h1 class="fw-bolder mx-0 caption-img-sale2"> MEN</h1>
+      </div>
+      <div class="col-lg-6 col-sm-12 shadow-sm position-relative banner-sale">
+        <img src="./images/sale2.jpg" alt="" class="img-fluid img-banner-sale">
+        <span class="color-primary fs-5 fw-bold caption-img-sale1">Sale 30%</span><br>
+        <h1 class="fw-bolder mx-0 caption-img-sale2"> Women</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-5">
+    <div class="row text-center">
+      <span class="color-primary fs-3">Special Offer</span>
+      <p class="fs-1 fw-bold">TOP COLLECTION</p>
+      <div class="col-12">
+        <div class="hr-special-offer mb-4"></div>
+      </div>
+      <div class="col-sm-12 col-lg-6 offset-lg-3">Lorem Ipsum is simply dummy text of the printing and
+        typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 ">
+                <div class="card shadow">
+                  <img src="./images/pro5.jpg" class="card-img-top imghover" alt="">
+                  <img src="images/pro6.jpg" class="imagehover card-img-top" alt="">
+                  <div class="card-hover-icon">
+                    <span class=" addcart">
+                      <ion-icon name="cart" class="mt-3"></ion-icon>
+                    </span>
+                    <p class="a-none text-secondary ">
+                      <ion-icon name="heart" class="mt-3" id="heart" onclick="doimautim()"></ion-icon>
+                    </p>
+                    <a href="" class="text-secondary" data-bs-target="#Modalpro" data-bs-toggle="modal">
+                      <ion-icon name="search-outline" class="mt-3"></ion-icon>
+
+                    </a>
+                    <a href="">
+                      <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-warning">
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star-half">
+                      </ion-icon>
+                    </h5>
+                    <p class="card-text">Red Dress</p>
+                    <span>$ <strong class="price">282
+                        &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                        205.3</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="card shadow">
+                  <img src="./images/pro3.jpg" class="card-img-top imghover" alt="">
+                  <img src="images/pro4.jpg" class="imagehover card-img-top" alt="">
+                  <div class="card-hover-icon">
+                    <span class=" addcart">
+                      <ion-icon name="cart" class="mt-3"></ion-icon>
+                    </span>
+                    <a href="">
+                      <ion-icon name="heart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-warning">
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star-half">
+                      </ion-icon>
+                    </h5>
+                    <p class="card-text">Black Dress</p>
+                    <span>$ <strong class="price">181.5
+                        &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                        205.3</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="card shadow">
+                  <img src="./images/pro1.jpg" class="card-img-top imghover" alt="">
+                  <img src="images/pro2.jpg" class="imagehover card-img-top" alt="">
+                  <div class="card-hover-icon">
+                    <a href="#">
+                      <ion-icon name="cart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="heart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-warning">
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star-half">
+                      </ion-icon>
+                    </h5>
+                    <p class="card-text">Black Dress</p>
+                    <span><strong>$ 181.5
+                        &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                        205.3</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="card shadow">
+                  <img src="./images/pro7.jpg" class="card-img-top imghover" alt="">
+                  <img src="images/pro8.jpg" class="imagehover card-img-top" alt="">
+                  <div class="card-hover-icon">
+                    <a href="#">
+                      <ion-icon name="cart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="heart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-warning">
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star-half">
+                      </ion-icon>
+                    </h5>
+                    <p class="card-text">Black Dress</p>
+                    <span><strong>$ 181.5
+                        &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                        205.3</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="card shadow">
+                  <img src="./images/pro9.jpg" class="card-img-top imghover" alt="">
+                  <img src="images/pro10.jpg" class="imagehover card-img-top" alt="">
+                  <div class="card-hover-icon">
+                    <a href="#">
+                      <ion-icon name="cart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="heart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-warning">
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star-half">
+                      </ion-icon>
+                    </h5>
+                    <p class="card-text">Black Dress</p>
+                    <span><strong>$ 181.5
+                        &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                        205.3</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                  <img src="./images/pro11.jpg" class="card-img-top imghover" alt="">
+                  <img src="images/pro12.jpg" class="imagehover card-img-top" alt="">
+                  <div class="card-hover-icon">
+                    <a href="#">
+                      <ion-icon name="cart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="heart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-warning">
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star-half">
+                      </ion-icon>
+                    </h5>
+                    <p class="card-text">Black Dress</p>
+                    <span><strong>$ 181.5
+                        &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                        205.3</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                  <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                  <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                  <div class="card-hover-icon">
+                    <a href="#">
+                      <ion-icon name="cart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="heart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-warning">
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star-half">
+                      </ion-icon>
+                    </h5>
+                    <p class="card-text">Black Dress</p>
+                    <span><strong>$ 181.5
+                        &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                        205.3</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                  <img src="./images/pro15.jpg" class="card-img-top imghover" alt="">
+                  <img src="images/pro16.jpg" class="imagehover card-img-top" alt="">
+                  <div class="card-hover-icon">
+                    <a href="#">
+                      <ion-icon name="cart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="heart" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                    </a>
+                    <a href="">
+                      <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-warning">
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star">
+                      </ion-icon>
+                      <ion-icon name="star-half">
+                      </ion-icon>
+                    </h5>
+                    <p class="card-text">Black Dress</p>
+                    <span><strong>$ 181.5
+                        &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                        205.3</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="modal modal-lg fade" id="Modalpro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 modal-hover-dad">
+              <img src="./images/pro5.jpg" alt="" class="img-modal-hover" style="width: 400px;">
+              <img src="./images/pro6.jpg" alt="" class="img-modal" style="width: 400px;">
+            </div>
+            <div class="col-lg-6 col-sm-12" width="10rem">
+              <p class="fs-1 fw-bolder">FITTED DRESS</p>
+              <span class="fs-2 fw-bold">$ 174.00</span>
+              <p class="mt-3 fs-4 fw-bold">Product Detail</p>
+              <span>It is a long established fact that a reader will be
+                distracted by the readable content of a page
+                when looking at its layout. The point of using Lorem
+                Ipsum is that it has a more-or-less normal
+                distribution of letters,It is a long established fact
+                that a reader will be distracted by the readable
+                content of a page when looking at its layout.</span>
+              <p class="mt-3 fs-4 fw-bold">Quanity</p>
+              <p class=" pquanity"><button id="minus" class="buttonminus"><span class="fs-4 text-dark"><i
+                      class="fa-solid fa-angle-left"></i></span></button>
+                <span id="numberPlace">0</span>
+                <button id="plus" class="buttonplus"><span class="fs-4 text-dark"><i
+                      class="fa-solid fa-angle-right"></i></span></button></p><BR>
+
+              <button class="btn btn-ouline-light mt-3 buttonmodaladd" id="liveToastBtn" >ADD TO
+                CART</button>
+              <a href="./indexsp.html" class="btn btn-ouline-light mt-3 buttonmodalview">VIEW
+                DETAIL</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="paralax mt-4 mb-5">
+    <div class="paralax-content">
+      <h1 class="color-primary">2021</h1>
+      <h2>FASHION TRENDS</h2>
+      <h3 class="text-secondary">SPECIAL OFFER</h3>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row text-center mb-3">
+      <h1 class="fw-bold">SPECIAL PRODUCT</h1>
+      <div class="hr-specialproduct mt-3 mb-3"></div>
+    </div>
+    <div class="row ">
+      <!-- Tab items -->
+      <div class="tabs">
+        <div class="tab-item active">
+          NEW ARRIVAL
+        </div>
+        <div class="tab-item">
+
+          FEATURED
+        </div>
+        <div class="tab-item">
+          SPECIAL
+        </div>
+        <div class="line"></div>
+      </div>
+
+      <!-- Tab content -->
+      <div class="tab-content">
+        <div class="tab-pane active">
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro1.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro2.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro3.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro4.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro5.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro6.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro7.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro8.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro9.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro10.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro11.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro12.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro15.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro16.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro16.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro15.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro14.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro13.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro12.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro11.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro10.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro9.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane">
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro8.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro7.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro6.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro5.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro4.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro3.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro2.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro1.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro9.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro10.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro11.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro12.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro15.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro16.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro11.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro12.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro15.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro16.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane">
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro9.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro10.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro11.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro12.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro15.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro16.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro9.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro10.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro11.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro12.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro15.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro16.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro1.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro10.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro11.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro12.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro15.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro16.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane">
+
+          <div class="row mb-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro9.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro10.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro11.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro12.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro13.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro14.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <img src="./images/pro15.jpg" class="card-img-top imghover" alt="">
+                <img src="images/pro16.jpg" class="imagehover card-img-top" alt="">
+                <div class="card-hover-icon">
+                  <a href="#">
+                    <ion-icon name="cart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="heart" class="mt-3">
+                    </ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="search-outline" class="mt-3"></ion-icon>
+                  </a>
+                  <a href="">
+                    <ion-icon name="link-outline" class="mt-3"></ion-icon>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </h5>
+                  <p class="card-text">Black Dress</p>
+                  <span><strong>$ 181.5 &emsp;</strong><span class="text-secondary text-decoration-line-through">$
+                      205.3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col-lg-4 col-sm-12 fs-4 border border-start-0 border-top-0 border-bottom-0 border-2">
+        <div class="row mt-1">
+          <div class="col-2 offset-1 text-end"><i class="fa-solid fa-truck color-primary fs-1 mt-2"></i></div>
+          <div class="col-8">
+            <span class="color-primary fw-bold">FREE SHIPPING</span>
+            <p class="fs-6 text-secondary">Free Shipping World Wide</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 fs-4 border border-start-0 border-top-0 border-bottom-0 border-2">
+        <div class="row mt-1">
+          <div class="col-2 offset-1 text-end"><i class="fa-solid fa-clock-rotate-left color-primary fs-1 mt-2"></i>
+          </div>
+          <div class="col-8">
+            <span class=" color-primary fw-bold">24/7 SERVICE</span>
+            <p class="fs-6 text-secondary">Online Service For New Customer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 fs-4">
+        <div class="row mt-1">
+          <div class="col-2 offset-1 text-end"><i class="fa-solid fa-bullhorn color-primary fs-1 mt-2"></i></div>
+          <div class="col-8">
+            <span class=" color-primary fw-bold">FESTIVAL OFFER</span>
+            <p class="fs-6 ">New Online Special Festival Offer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <span class="color-primary">Our Collection</span>
+      <p class="fw-bold fs-1">SPECIAL PRODUCT</p>
+      <div class="hr-special-offer"></div>
+    </div>
+    <div class="row mt-4 mx-auto">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="card blogcard">
+                  <div class="hover15">
+                    <figure><a href="./indexblog.html"><img src="./images/blog1.jpg" class="card-img-top" alt="..."></a></figure>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title color-primary fs-6">
+                      26 January 2022</h5>
+                    <p class="card-text fw-bold">Lorem
+                      ipsum, dolor sit amet
+                      consectetur adipisicing elit.
+                    </p>
+                    <div class="hr-special-offer"></div>
+                    <p class="text-secondary font-size-small mt-2">
+                      By : Johnny Depp , 2,1K Comments
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="card blogcard responsive_none">
+                  <div class="hover15">
+                    <figure><img src="./images/blog2.jpg" class="card-img-top" alt="..."></figure>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title color-primary fs-6">
+                      26 January 2022</h5>
+                    <p class="card-text fw-bold">Lorem
+                      ipsum, dolor sit amet
+                      consectetur adipisicing elit.
+                    </p>
+                    <div class="hr-special-offer"></div>
+                    <p class="text-secondary font-size-small mt-2">
+                      By : Johnny Depp , 2,1K Comments
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="card blogcard">
+                  <div class="hover15">
+                    <figure><img src="./images/blog3.jpg" class="card-img-top" alt="..."></figure>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title color-primary fs-6">
+                      26 January 2022</h5>
+                    <p class="card-text fw-bold">Lorem
+                      ipsum, dolor sit amet
+                      consectetur adipisicing elit.
+                    </p>
+                    <div class="hr-special-offer"></div>
+                    <p class="text-secondary font-size-small mt-2">
+                      By : Johnny Depp , 2,1K Comments
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="card blogcard"">
+            <div class=" hover15">
+                  <figure><img src="./images/blog4.jpg" class="card-img-top" alt="...">
+                  </figure>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title color-primary fs-6">26
+                    January 2022</h5>
+                  <p class="card-text fw-bold">Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit.
+                  </p>
+                  <div class="hr-special-offer"></div>
+                  <p class="text-secondary font-size-small mt-2">
+                    By : Johnny Depp , 2,1K Comments</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+              <div class="card blogcard responsive_none">
+                <div class="hover15">
+                  <figure><img src="./images/blog5.jpg" class="card-img-top" alt="...">
+                  </figure>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title color-primary fs-6">26
+                    January 2022</h5>
+                  <p class="card-text fw-bold">Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit.
+                  </p>
+                  <div class="hr-special-offer"></div>
+                  <p class="text-secondary font-size-small mt-2">
+                    By : Johnny Depp , 2,1K Comments</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+              <div class="card blogcard">
+                <div class="hover15">
+                  <figure><img src="./images/blog6.jpg" class="card-img-top" alt="...">
+                  </figure>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title color-primary fs-6">26
+                    January 2022</h5>
+                  <p class="card-text fw-bold">Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit.
+                  </p>
+                  <div class="hr-special-offer"></div>
+                  <p class="text-secondary font-size-small mt-2">
+                    By : Johnny Depp , 2,1K Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </div>
+  <div class="social-media mt-5 mb-5">
+    <div class="row text-center">
+      <p class="fw-bold fs-2"># INSTAGRAM</p>
+    </div>
+    <div class="row">
+      <div class="col-2 imgsocial"><img src="./images/insta1.jpg" class="instaimg" alt="">
+        <div class="overlay">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+      <div class="col-2 imgsocial"><img src="./images/insta2.jpg" class="instaimg" alt="">
+        <div class="overlay">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+      <div class="col-2 imgsocial"><img src="./images/insta3.jpg" class="instaimg">
+        <div class="overlay">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+      <div class="col-2 imgsocial"><img src="./images/insta4.jpg" class="instaimg">
+        <div class="overlay">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+      <div class="col-2 imgsocial "><img src="./images/insta5.jpg" class="instaimg">
+        <div class="overlay">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+      <div class="col-2 imgsocial "><img src="./images/insta6.jpg" class="instaimg">
+        <div class="overlay">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12 centerafterfooter">
+        <span class="fw-bold fs-3 text-center">KNOW IT ALL FIRST!</span>
+        <p class="fs-6 text-secondary responsive_none">Never Miss Anything From Multikart By
+          Signing Up To Our Newsletter.</p>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 centerafterfooter">
+        <input type="text" placeholder="Enter Your Email"><button>SUBCRIBE</button>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="row mt-5">
+            <img src="./images/logo.png" alt="" class="logo">
+          </div>
+          <div class="row font-size-small mt-3" style="margin-left: 1px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam.
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12 mt-5 lifooter">
+          <ul>
+            <li>
+              <p class="fs-4 fw-bold dropdownbtn">ACCOUNT</p>
+
+            </li>
+            <li class="lh-lg text-secondary font-size-small">Women</li>
+            <li class="lh-lg text-secondary font-size-small"> Clothing</li>
+            <li class="lh-lg text-secondary font-size-small"> Accessories</li>
+            <li class="lh-lg text-secondary font-size-small"> Feature</li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 mt-5">
+          <ul>
+            <li>
+              <p class="fs-4 fw-bold">WHY WE CHOOSE</p>
+            </li>
+            <li class="lh-lg text-secondary font-size-small">Shipping & Return</li>
+            <li class="lh-lg text-secondary font-size-small"> Secure Shopping</li>
+            <li class="lh-lg text-secondary font-size-small"> Gallarys</li>
+            <li class="lh-lg text-secondary font-size-small"> Affiliates</li>
+            <li class="lh-lg text-secondary font-size-small"> Contacts</li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 mt-5">
+          <ul>
+            <li>
+              <p class="fs-4 fw-bold">INFORMATION</p>
+            </li>
+            <li class="lh-lg text-secondary font-size-small">Demo Store</li>
+            <li class="lh-lg text-secondary font-size-small"> Call Us: +84
+              886-670-711</li>
+            <li class="lh-lg text-secondary font-size-small"> Email Us:
+              longkg@gmail.com</li>
+            <li class="lh-lg text-secondary font-size-small"> Fax : 123456</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <p class="text-secondary">© 2020-21 themeforest powered by pixelstrap</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 icon-footer">
+          <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-google-plus-g"></i><i
+            class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-solid fa-rss"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <ion-icon name="paper-plane-outline" style="transform: rotate(-90deg);"></ion-icon>
+  </button>
+<div class="toast-container position-fixed top-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="./images/icontabbar.jpg" class="rounded me-2" alt="..."style="width: 50px;">
+      <strong class="me-auto">MultiKart</strong>
+      <small>1 Second ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body fw-bold">
+      Product Added Successfully!
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal-cart">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container container-cart">
+          
+  <div class="row fw-bold text-center product-header">
+    <hr>
+    <div class="col-2">
+      <p>Products</p>
+    </div>
+      <div class="col-2">
+      <p>Name</p>
+    </div>
+    <div class="col-2">
+      <p>Price</p>
+    </div>
+    <div class="col-2">
+      <p>Quanity</p>
+    </div>
+
+  </div>
+  <!-- <div class="row product text-center">
+    <div class="col-2">
+      <img src="./images/pro1.jpg" alt="" class="img-fluid h-50">
+    </div>
+    <div class="col-2 fw-bold color-primary mt-4">
+      <p class="name-product">Black Dress</p>
+    </div>
+    <div class="col-2 fw-bold color-primary mt-4">
+      <p class="price-product">12$</p>
+    </div>
+    <div class="col-2 fw-bold color-primary mt-4">
+      <p class=" quanity-product">1</p>
+    </div>
+    <div class="col-2 fw-bold color-primary mt-4">
+      <p class="total-product">12$</p>
+    </div>
+    <div class="col-2 mt-3 fs-3 text-start">
+      <span>
+        <i class="fa-solid fa-circle-xmark"></i>
+      </span>
+    </div>
+  </div> -->
+<p class="position-absolute bottom-0 end-0 mx-5 totalplus">Total : <span class="">0$</span> </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn bg-color-primary text-white">Check Out</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./bootstrap5.2/js/bootstrap.js"></script>
+  <script src="./bootstrap5.2/js/bootstrap.bundle.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
