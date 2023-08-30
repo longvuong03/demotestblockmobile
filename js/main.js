@@ -46,8 +46,18 @@ window.onload = function () {
 
 }
 if (window.matchMedia("(max-width: 768px)").matches) {
-        window.location.href = "../mobile-not-supported.html";
-}
+        // Redirect to a different page or display a message
+        // Example of redirection:
+        window.location.href = "mobile-not-supported.html";
+      
+        // Example of displaying a message:
+        const message = document.createElement("p");
+        message.textContent = "Mobile devices are not supported on this website.";
+        document.body.appendChild(message);
+      
+        // You might also consider disabling certain functionality or styles
+        // specific to mobile devices.
+      }
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
