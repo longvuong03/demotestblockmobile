@@ -48,12 +48,10 @@ window.onload = function () {
 if (window.matchMedia("(max-width: 768px)").matches) {
         // Redirect to a different page or display a message
         // Example of redirection:
-        window.location.href = "https://longvuong03.github.io/doanbootstrap/mobile-not-supported.html";
+        window.location.href = "https://longvuong03.github.io/doanbootstrap/js/mobile-not-supported.html";
       
         // Example of displaying a message:
-        const message = document.createElement("p");
-        message.textContent = "Mobile devices are not supported on this website.";
-        document.body.appendChild(message);
+
       
         // You might also consider disabling certain functionality or styles
         // specific to mobile devices.
