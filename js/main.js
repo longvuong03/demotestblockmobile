@@ -46,7 +46,6 @@ window.onload = function () {
 
 }
 if (window.matchMedia("(max-width: 768px)").matches) {
-
         window.location.href = "../mobile-not-supported.html";
 }
 
