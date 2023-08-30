@@ -48,7 +48,11 @@ window.onload = function () {
 if (window.matchMedia("(max-width: 768px)").matches) {
         // Redirect to a different page or display a message
         // Example of redirection:
+<<<<<<< HEAD
         window.location.href = "https://longvuong03.github.io/doanbootstrap/js/mobile-not-supported.html";
+=======
+        window.location.href = "https://longvuong03.github.io/demotestblockmobile/js/mobile-not-supported.html";
+>>>>>>> d3a648e7245460c33bbfb2db6b5b5a51c23c55f5
       
         // Example of displaying a message:
 
